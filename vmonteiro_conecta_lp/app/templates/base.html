@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Porto Seguro Conecta - Revendedor Oficial</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" type="image/ico" href="../static/img/logo_vmonteiro_sem_escrito_sem_fundo.png"/>
+</head>
+
+<body>
+  <nav class="deep-purple darken-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="../static/img/logo_novo.png" alt="VMonteiro Corretora de Seguros" height="65"></a>
+     <!-- Menu removido
+	 <ul class="right hide-on-med-and-down">
+        <li><a href="#">Menu</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Menu</a></li>
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	 --> 
+    </div>
+  </nav>
+  
+  {% block content %}
+  {% endblock %}
+
+  <footer class="page-footer deep-purple darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">A V Monteiro Corretora de Seguros</h5>
+          <p class="grey-text text-lighten-4">Há mais de 12 anos de parceiria com a Porto Seguro e com clientes fidelizados em mais de três estados.
+        </div>
+		<div class="col l3 s12">
+          <h5 class="white-text">Alguns dos planos oferecidos:</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Conecta100</a></li>
+            <li><a class="white-text" href="#!">Conecta+5Gb</a></li>
+            <li><a class="white-text" href="#!">Conecta+10Gb</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="white-text" href="http://materializecss.com">V Monteiro Corretora de Seguros</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script src="../static/js/init.js"></script>
+  </body>
+</html>

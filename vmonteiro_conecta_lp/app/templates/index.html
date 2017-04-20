@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h1 class="header center blue-text"><a id="logo-container" href="#" class="brand-logo"><img src="../static/img/logo_conecta.png" alt="Porto Seguro Conecta" height="150"></a></h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Telefonia móvel <b>diferente</b> para transformar sua experiência com operadoras de celular.<p>Entre em contato com um corretor credenciado, tire suas dúvidas e faça o teste!</p></h5>
+      </div>
+      <div class="row center">
+			<form name="subscribe" class="col s12" action="" method="POST">
+			{{ leadform.csrf_token }}
+			  <div class="row">
+				<div class="input-field col s6" >
+				  <i class="material-icons prefix deep-purple-text text-darken-3">account_circle</i>
+				  <!-- <input id="name" type="text" class="validate"> -->
+				  {{ leadform.name(class="name", type="text", class="validate") }}  
+				  <label for="icon_prefix">Nome</label>
+				</div>
+				<div class="input-field col s6">
+				  <i class="material-icons prefix deep-purple-text text-darken-3">phone</i>
+				  <!-- <input id="phone" type="tel" class="validate"/> -->
+				  {{ leadform.telnumber(id="phone", type="tel", class="validate") }}
+				  <label for="icon_telephone">Telefone</label>
+				</div>
+			  </div>
+				<div class="row">
+					<div class="input-field col s12">
+					  <i class="material-icons prefix deep-purple-text text-darken-3">email</i>
+					 <!--  <input id="email" type="email" class="validate"/> -->
+					  {{ leadform.email(id="email", type="email", class="validate") }}
+					  <label for="email" data-error="wrong" data-success="right">Email</label>
+					</div>
+				</div>
+				<div class="row center">
+					<button class="btn-large waves-effect waves-light pink accent-2" type="submit" name="action">
+						Consulte-nos Agora!
+					</button>
+				</div>
+			</form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <h2 class="col s12 grey-text text-darken-2">Conecta<span class="blue-text"><strong>+5GB<strong></span></h2>
+		<h4 class="grey-text text-darken-3">
+			<span class="grey-text"><small>R$</small></span><strong>129</strong><small><strong>,90</strong><span class="grey-text">/mês</span></small>
+		</h4>
+      </div>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text text-darken-4"><i class="material-icons">swap_vert</i></h2>
+            <h5 class="center">5GB de Internet 4G</h5>
+
+            <p class="light">Internet de alta velocidade com a maior cobertura do Brasil.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text text-darken-4"><i class="material-icons">call</i></h2>
+            <h5 class="center">Fale ilimitado</h5>
+
+            <p class="light">Com a Conecta+ você fala a vontade para qualquer DDD.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center green-text text-darken-4"><i class="material-icons">phonelink_lock</i></h2>
+            <h5 class="center">Seguro do aparelho</h5>
+
+            <p class="light">A Porto Seguro assegura seu aparelho para você aproveitar ao máximo seu Conecta</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+{% endblock %}
