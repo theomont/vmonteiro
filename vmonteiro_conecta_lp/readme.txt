@@ -18,6 +18,4 @@ $ python3 run.py runserver
 Sendo assim todos os demais comandos também serão dados atraves do Flask Manager, como por exemplo:
 $ python3 run.py db init
 $ python3 run.py db migrate
-$ python3 run.py db upgrade  
-
-teste git
+$ python3 run.py db upgrade 
