@@ -20,5 +20,8 @@ $ python3 run.py db init
 $ python3 run.py db migrate
 $ python3 run.py db upgrade
 
+Rodando no servidor a aplicação com acesso via dominio vinculado/ porta 80
+$ python3 run.py runserver --host 0.0.0.0 --port 80
+
 Acessando o servidor via SSH
 $ ssh root@107.170.19.122 
