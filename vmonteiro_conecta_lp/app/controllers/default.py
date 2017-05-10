@@ -13,13 +13,17 @@ from app.models.forms import LeadForm#, LoginForm
 @app.route("/", methods=["GET","POST"])
 def index():
 	leadform = LeadForm()
-	print(leadform.name.data)
-	print(leadform.telnumber.data)
-	print(leadform.email.data)
-	l = Lead(leadform.name.data, leadform.telnumber.data, leadform.email.data)
-	db.session.add(l)
-	db.session.commit()
-	return render_template('index.html',leadform=leadform)
+	if leadform.validate_on_submit():
+		print(leadform.name.data)
+		print(leadform.telnumber.data)
+		print(leadform.email.data)            
+		l = Lead(leadform.name.data, leadform.telnumber.data, leadform.email.data)
+		db.session.add(l)
+		db.session.commit()
+		return redirect(url_for("thanks"))
+	else:
+		print(leadform.errors) 
+	return render_template("index.html",leadform=leadform)
 
 @app.route("/obrigado")
 def thanks():

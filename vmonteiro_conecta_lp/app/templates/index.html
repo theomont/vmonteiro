@@ -16,6 +16,9 @@
 				  <!-- <input id="name" type="text" class="validate"> -->
 				  {{ leadform.name(class="name", type="text", class="validate") }}  
 				  <label for="icon_prefix">Nome</label>
+				  {% if leadform.name.errors %}
+
+				  {% endif %}
 				</div>
 				<div class="input-field col s6">
 				  <i class="material-icons prefix deep-purple-text text-darken-3">phone</i>
