@@ -19,7 +19,7 @@ Jinja2==2.9.6
 jsonpatch==1.10
 jsonpointer==1.9
 language-selector==0.1
-Mako==1.0.6
+Mako==1.2.2
 MarkupSafe==1.0
 oauthlib==1.0.3
 packaging==16.8
